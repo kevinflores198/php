@@ -141,3 +141,19 @@ functions
 with it we import other folders
 
 require("functions.php");
+
+we can separate all the information in different files.
+And data will be global, so we do not need to add the info anytime we use it
+
+using require, we can import the file ordered, and no need to code more than need
+
+but a better way to do it is 
+make a new folder templates and use the html template into 
+make a function and require the template needed.
+on index we importe with the function name and what to use.
+with this way we need to use again the variable data 
+
+if we access to the render_template function, it makes us access to the content 
+as a variable, and will be better to use.
+on render_template we extract $data and we use it on the require folder 
+then it's easier to use.
